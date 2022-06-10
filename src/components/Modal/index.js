@@ -23,7 +23,6 @@ export default function Modal({ todoItem, closeModal, isEdit, index }) {
 			...todo,
 			[field]: value
 		}))
-		// console.log(todo)
 	}
 	const actionOnTodo = async () => {
 		console.log("todo: => ", index)
@@ -37,29 +36,6 @@ export default function Modal({ todoItem, closeModal, isEdit, index }) {
 				closeModal(false);
 		}
 	}
-	// const saveTodo = async () => {
-
-	//     setTodo({...todo, account})
-	//     console.log("toso ", todo)
-	//     const _todo = await contract?.addToDo(todo);
-	//     const data = await _todo.wait();
-	//     console.log("save ",  data, todo)
-	//     const a = await contract.getToDo()
-	//     console.log("list ",  a)
-
-	//     setTodoItems(data);
-	//   }
-	//   const updateTodo = async () => {
-
-	//       console.log("toso ", todo)
-	//     const _todo = await contract?.updateToDo(index,todo);
-	//     const data = await _todo.wait();
-	//     console.log("update ",  data)
-	//     const a = await contract.getToDo()
-	//     console.log("list ",  a)
-
-	//     setTodoItems(data);
-	//   }
 	return (
 		<div className="flex justify-center items-center overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none bg-overlay">
 			<div className="relative my-2 w-3/4 lg:w-1/3">

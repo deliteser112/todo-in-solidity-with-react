@@ -52,7 +52,7 @@ export default function RenderToDoList() {
                         </thead>
                         <tbody>
                             {todoList.map((item, index) => (
-                                <tr key={index} className="bg-white border-b bg-gray-800 border-gray-700">
+                                <tr key={index} className="border-b bg-gray-800 border-gray-700">
                                     <td scope="row" className="px-6 py-4">
                                         <div className='text-base font-medium text-gray-300 whitespace-nowrap'>{item.title}</div>
                                         <div className='text-xs font-light text-gray-300 whitespace-nowrap'>{item.description}</div>
